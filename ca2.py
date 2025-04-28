@@ -13,7 +13,7 @@ df["Electric Utility"]=df["Electric Utility"].fillna(df["Electric Utility"].mode
 df["2020 Census Tract"]=df["2020 Census Tract"].fillna(df["2020 Census Tract"].mode()[0])
 print(df.isnull().sum())
 #1)Find out which electric vehicle types are common in top cities
-
+@
 # Count vehicle types per city
 top_cities = df['City'].value_counts().head(10).index
 filtered = df[df['City'].isin(top_cities)]
