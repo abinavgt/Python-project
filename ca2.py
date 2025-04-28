@@ -37,7 +37,7 @@ plt.title("Electric Range by Vehicle Make")
 plt.xticks(rotation=90)
 plt.tight_layout()
 plt.show()
-
+#
 
 #3 Compare number of EVs by model year
 model_year_counts = df['Model Year'].value_counts().sort_index()
