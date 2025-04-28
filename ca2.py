@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+#sgrdhttfgfyjhgkujhjkn
 df=pd.read_csv(r"C:\Users\91934\OneDrive\Desktop\Electric_Vehicle_Population_Data.csv")
 print(df.isnull().sum())
 df["County"]=df["County"].fillna(df["County"].mode()[0])
