@@ -6,6 +6,7 @@ df=pd.read_csv(r"C:\Users\91934\OneDrive\Desktop\Electric_Vehicle_Population_Dat
 print(df.isnull().sum())
 df["County"]=df["County"].fillna(df["County"].mode()[0])
 df["City"]=df["City"].fillna(df["City"].mode()[0])
+#bje
 df["Postal Code"]=df["Postal Code"].fillna(df["Postal Code"].median())
 df["Legislative District"]=df["Legislative District"].fillna(df["Legislative District"].median())
 df["Vehicle Location"]=df["Vehicle Location"].fillna(df["Vehicle Location"].mode()[0])
